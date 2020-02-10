@@ -2,6 +2,7 @@
 Program to show dates from year 1000-9999 that are palindromes
 
 Sub problem - How many palindrome dates left in the 21st century after 02/02/2020?
+
 How it works
 
 There are 8 numbers in the mm/dd/yyyy format
