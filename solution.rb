@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'date'
 
 def palindrome?(str)
@@ -15,11 +17,11 @@ def dates_to_check
 end
 
 def valid_month(arr)
-  arr.filter! { |x| (x[0]+x[1]).to_i > 1 && (x[0]+x[1]).to_i < 13 }
+  arr.filter! { |x| (x[0] + x[1]) > '00' && (x[0] + x[1]) < '13' }
 end
 
 def valid_day(arr)
-  arr.filter! { |x| (x[2]+x[3]).to_i > 1 && (x[2]+x[3]).to_i < 32 }
+  arr.filter! { |x| (x[2] + x[3]) > '00' && (x[2] + x[3]) < '32' }
 end
 
 def filter_date(arr)
@@ -28,7 +30,7 @@ def filter_date(arr)
 end
 
 def format_date(arr)
-  arr.map { |x| x.insert(2, '/' ); x.insert(5, '/' ) }
+  arr.map { |x| x.insert(2, '/'); x.insert(5, '/') }
 end
 
 def valid_date?(date)
