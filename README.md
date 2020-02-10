@@ -1,17 +1,19 @@
 # palindrome_dates
 Program to show dates from year 1000-9999 that are palindromes
 
+Sub problem - How many palindrome dates left in the 21st century after 02/02/2020?
 How it works
 
 There are 8 numbers in the mm/dd/yyyy format
 
-the last four must reflect the first four to be a palindrome.
-This creates pairs that must reflect each other
+The last four numbers must be a reflection of the first four to be a palindrome.
+mmdd  must relfect yyyy to be a palindrome
 
+The following pairs must then be reflections of each other
 mm - yy
 dd - yy
 
-in the 21st Century the firsy YY pair will always be 20
+In the 21st Century the firsy YY pair will always be 20
 This means that dd must be the reflection, 02
 
 We now know half of the problem solution, additionally we know every palindrome date this century will take place on the second of the month.
@@ -40,3 +42,5 @@ The ordered palindrome dates
 07/02/2070
 08/02/2080
 09/02/2090
+
+8 of which occur after 02/02/2020
