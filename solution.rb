@@ -2,18 +2,14 @@
 
 require 'date'
 
-def palindrome?(str)
-  str == str.reverse
-end
-
 def dates_to_check
-  palindrome_years = []
-  1000.upto(10_000) do |year|
-    year = year.to_s
-    year.prepend year.reverse
-    palindrome_years << year if palindrome? year
+  dates = []
+  1000.upto(10_000) do |date|
+    date = date.to_s
+    date.prepend date.reverse
+    dates << date
   end
-  palindrome_years
+  dates
 end
 
 def valid_month(arr)
